@@ -30,13 +30,53 @@
   color: black;
   text-align: left;
   padding-bottom: 20px;
+  animation: slideUp 1.4s ease;
 }
 
 .brief_description {
   text-align: left;
+  animation: slideUp 1.4s ease;
 }
 
 .profile_image {
-  width: 500px;
+  width: 400px;
   height: auto;
+  border-radius: 8px;
+  -webkit-animation: slideIn 2s forwards;
+  -moz-animation: slideIn 2s forwards;
+  animation: slideIn 2s forwards;
+}
+
+@-webkit-keyframes slideIn {
+  0% {
+    transform: translateX(-700px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@-moz-keyframes slideIn {
+  0% {
+    transform: translateX(-700px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes slideIn {
+  0% {
+    transform: translateX(-700px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideUp{
+  0% {
+    transform: translateY(-700px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }
